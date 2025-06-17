@@ -118,7 +118,7 @@
       </div>
     </div>
     
-    <!-- 테스트케이스 매핑 탭 -->
+    <!-- 테스트케이스 매핑 탭 (✅ Steps 영역 추가) -->
     <div id="mapping" class="tab-content">
       <div class="mapping-container">
         <div class="panel left-panel">
@@ -137,6 +137,10 @@ Precondition:
 0. 브라우저를 열고 로그인 페이지로 이동
 1. 유효한 사용자 계정이 존재함
 2. 네트워크 연결이 정상임
+Steps:
+1. 아이디 입력 필드에 테스트 계정 입력
+2. 비밀번호 입력 필드에 비밀번호 입력
+3. 로그인 버튼 클릭
 Expected Result: 로그인 성공 후 메인 페이지로 이동"></textarea>
             </div>
             <button class="extract-btn" onclick="extractTestcaseData()">📊 데이터 추출</button>
@@ -158,6 +162,13 @@ Expected Result: 로그인 성공 후 메인 페이지로 이동"></textarea>
               <div class="section-header">⚙️ Precondition</div>
               <div class="section-content" id="preconditionResult">
                 <span class="placeholder-text">추출된 Precondition이 여기에 표시됩니다</span>
+              </div>
+            </div>
+            <!-- ✅ 새로 추가된 Steps 섹션 -->
+            <div class="parsed-section steps-section">
+              <div class="section-header">🔢 Steps</div>
+              <div class="section-content" id="stepsResult">
+                <span class="placeholder-text">추출된 Steps가 여기에 표시됩니다</span>
               </div>
             </div>
             <div class="parsed-section">
@@ -189,6 +200,9 @@ Expected Result: 로그인 성공 후 메인 페이지로 이동"></textarea>
 //
 // === Summary Scripts ===  
 // Summary 매핑 스크립트가 여기에 표시됩니다
+//
+// === Steps Scripts ===
+// Steps 매핑 스크립트가 여기에 표시됩니다
 //
 // === Expected Result Scripts ===
 // Expected Result 매핑 스크립트가 여기에 표시됩니다</span>
